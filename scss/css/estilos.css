@@ -1,3 +1,46 @@
+.descripcion {
+  display: list-item;
+}
+
+.contacto {
+  border-style: outset;
+  margin: 0px;
+  padding: 0px;
+  background-color: #bb4538;
+  color: white;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 50px;
+  color: white;
+  font-size: medium;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.foto {
+  width: 400px;
+  left: 400px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.foto:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -111,9 +154,6 @@ ul li :hover {
   font-weight: bold;
 }
 
-
-
-
 span {
   color: #bb4538;
 }
@@ -147,7 +187,22 @@ span {
   border-style: inset;
 }
 
-
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 50px;
+  color: white;
+  font-size: medium;
+  font-family: 'Noto Sans', sans-serif;
+}
 
 .seccion {
   text-align: center;
@@ -233,7 +288,7 @@ span {
   height: 50px;
 }
 
-.foto {
+.slogan__foto {
   width: 400px;
   left: 400px;
   -webkit-filter: grayscale(100%);
@@ -242,7 +297,7 @@ span {
   transition: .3s ease-in-out;
 }
 
-.foto:hover {
+.slogan__foto:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
