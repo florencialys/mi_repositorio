@@ -1,35 +1,36 @@
 @import"catering";
 @import"contacto";
-@import"eventos";
+@import"adicionales";
 @import"galeria";
-@import"servicios";
+
+
+
+
 
 html{
     font-size: 62.5%;
 }
 
+
 .body{
     display: flex;
-    background-image: url(../imagenes/44764855_1962680853816519_3764740002622210048_o.jpg);
-    background-repeat: no-repeat;
+    background-color:white;
     background-position: center;
     background-size: cover;
-    font-family: 'Noto Sans', sans-serif;
-    flex-direction:column
+    font-family: 'Radley', serif;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
 
-
+.nav-link{
+    font-size: 20rem;
+}
 
 h1{
 text-align: center;
 text-transform: capitalize;
-}
-
-h2 {
-text-align: center;
-text-transform: none;
 }
 
 h3{
@@ -43,9 +44,9 @@ color: teal;
 h4{
 text-align: center;
 font-weight: bold;
-font-size: medium;
+font-size:xx-large;
 background-color: white;
-color: teal;
+color: teal
 }
 
 
@@ -59,9 +60,9 @@ a{
 .container-header {
 font-style: normal;
 font-weight: bold;
-font-size: large; 
-text-align: center;
+font-size: large;
 }
+
 
 ul li {
 display: inline-block;
@@ -111,7 +112,7 @@ background-color: #072968
 animation-name: animate__swing;
 color: rgb(240, 245, 245);
 text-align: center;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: 'Radley', serif;
 font-weight: bold;
 }
 
@@ -135,50 +136,10 @@ background-color: salmon;
 color: white;
 }
 
-
-.pie {
-background: rgb(3,18,91);
-background: radial-gradient(circle, rgba(3,18,91,1) 5%, rgba(222,151,165,1) 77%);
-border-style: inset;
-display: inline-block;
-width: 1330px;
-height: 100px;
-}
-
-.pie {
-background: rgb(3,18,91);
-background: radial-gradient(circle, rgba(3,18,91,1) 5%, rgba(222,151,165,1) 77%);
-border-style: inset;
-}
-
-
-
-.formulario {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-height: 50px;
-color: white;
-font-size: medium;
-font-family:  'Noto Sans', sans-serif;
-
-}
-
-.seccion{
-text-align: center;
-background-color: teal;
-color: white;
-}
-.slogan{
-text-align: center;
-background-color:salmon;
-color: white;
-
-}
-
-
 .padre{
+    float: row;
 color: rosybrown;
+
 }
 
 .titulo{
@@ -186,47 +147,19 @@ background-color:white;
 color: rosybrown;
 }
 
-.grid{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-grid-template-areas:"uno dos tres"
-                    "cuatro cinco seis";
 
-}
-.servicios1{
-color: cadetblue;
-grid-area: dos;
-}
-.servicios2{
-color: cadetblue;
-grid-area: cinco;
-}
-.servicios3{
-color: cadetblue;
-grid-area: seis;
-}
-.servicios4{
-color: cadetblue;
-grid-area: uno;
-}
-.servicios5{
-color: cadetblue;
-grid-area: tres;
-}
-.servicios6{
-color: cadetblue;
-grid-area: cuatro;
-}
 .ig{
 
 width: 50px;
 height: 50px;
+float: right;
+
 
 }
 .fb{
 width: 50px;
 height: 50px;
+float: right;
 }
 .slogan__foto{
 width: 400px;
@@ -243,23 +176,92 @@ filter: grayscale(0);
 }
 
 .logo{
-transform: scale(1.5);
+    display: flex;
+    justify-content: left !important;
+}
+.logo{
+transform: rotate3d(360);
 -webkit-transition: .3s ease-in-out;
 transition: .3s ease-in-out;
 }
 
 
 .logo:hover {
--webkit-transform: scale(1);
-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+
+
+
+.container h2{
+    font-size: x-large;
+    color: rgb(236, 191, 162);
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Radley', serif;
+    background-color: teal;
+    animation-duration: 3s;
+    animation-name: aparecer;
 }
 
-.container-fluid{
-background:radial-gradient(circle, rgba(3,18,91,1) 5%, rgba(222,151,165,1) 77%);
-    height: 100px;
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+.nosotros{
+ margin-top: 50px;
+ border-top: teal solid;
+
 }
-.container{
-background:radial-gradient(circle, rgba(3,18,91,1) 5%, rgba(222,151,165,1) 77%);
-height: 30px;
-width: 500px;
+.tituloin{
+    float: center;
+}
+.nosotros p{
+    font-size: large;
+    margin-top: 50px;
+    padding: 50px;
+}
+.descripcion{
+    font-display: right;
+    background-color: transparent;
+    color:black ;
+    border: transparent;
+}
+.nosotros img{
+    float: left;
+}
+
+.pie{
+    margin-bottom: 5px;
+    padding: 50px;
+    border-top: teal solid;
+    font-family: 'Radley', serif;
+    font-size: 15px;
+    text-align: left;
+}
+.redes {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #1d1e18;
+    margin-right: 10px;
+}
+.redes a:hover {
+    color:rosybrown;
+}
+.container-fluid{
+    padding: 10px ;
+    background:rgb(11, 94, 100);
+    z-index: 10000;
+    width: 100% !important;
+    color: white;
+
 }
